@@ -30,7 +30,7 @@ return (
 
     {restaurants.length ? 
     (<div>
-    <h1>Check Out All those Raunts</h1>
+    <h1>Check Out All Those Raunts</h1>
     
         <Row>
        {restaurants.map(item => {
