@@ -1,13 +1,20 @@
 import React from "react";
+import Nav from 'react-bootstrap/Nav'
+import Navbar from 'react-bootstrap/Navbar'
 
-function Nav() {
+function Navagation() {
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a className="navbar-brand" href="/">
-        Rando-Raunt
-      </a>
-    </nav>
+  
+    <Navbar bg="dark" variant="dark">
+    <Navbar.Brand href="/">Rando-Raunt</Navbar.Brand>
+    <Nav className="mr-auto">
+      <Nav.Link href="/addRestaurant">Add Another</Nav.Link>
+      <Nav.Link href="/randomizer">Find Random Restraunt</Nav.Link>
+      
+    </Nav>
+    </Navbar>
+
   );
 }
 
-export default Nav;
+export default Navagation;

@@ -83,27 +83,7 @@ function Restaurants() {
               </FormBtn>
             </form>
           </Col>
-          {/* <Col size="md-6 sm-12">
-            <Jumbotron>
-              <h1>Books On My List</h1>
-            </Jumbotron>
-            {restaurants.length ? (
-              <List>
-                {restaurants.map(restaurant => (
-                  <ListItem key={restaurant._id}>
-                    <Link to={"/restaurants/" + restaurant._id}>
-                      <strong>
-                        {restaurant.title} by {restaurant.author}
-                      </strong>
-                    </Link>
-                    <DeleteBtn onClick={() => deleteRestaurant(restaurant._id)} />
-                  </ListItem>
-                ))}
-              </List> */}
-            {/* ) : (
-              <h3>No Results to Display</h3>
-            )} */}
-          {/* </Col> */}
+
         </Row>
       </Container>
     );
