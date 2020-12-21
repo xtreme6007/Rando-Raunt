@@ -46,7 +46,11 @@ function Restaurants() {
         Category: formObject.category,
         Description: formObject.description
         
-      })
+      }).then(() => setFormObject({
+        name: "",
+        category: "",
+        description: ""
+      }))
         .then(res => loadRestaurants())
         .catch(err => console.log(err));
     }
@@ -85,7 +89,7 @@ function Restaurants() {
                 onClick={handleFormSubmit}
               >
                 Add To Mix
-              </FormBtn>
+              </FormBtn >
             </form>
           </Col>
 
