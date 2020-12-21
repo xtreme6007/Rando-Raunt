@@ -10,6 +10,7 @@ function Navagation() {
     <Nav className="mr-auto">
       <Nav.Link href="/addRestaurant">Add Another</Nav.Link>
       <Nav.Link href="/randomizer">Find Random Restraunt</Nav.Link>
+      <Nav.Link href="/viewall">See All Restaurunts</Nav.Link>
       
     </Nav>
     </Navbar>

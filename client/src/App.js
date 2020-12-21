@@ -5,6 +5,7 @@ import Detail from "./pages/Detail";
 import Randomizer from "./pages/Randomizer";
 import Landing from "./pages/Landing";
 import './pages/RandomStyle.css'
+import ViewAll from "./pages/ViewAll";
 
 import Navagation from "./components/Nav";
 
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route exact path={["/","/randomizer"]}>
             <Randomizer />
+          </Route>
+          <Route exact path={"/viewall"}>
+            <ViewAll />
           </Route>
         </Switch>
       </div>
