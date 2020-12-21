@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Restaurants from "./pages/restaurants";
 import Detail from "./pages/Detail";
-import NoMatch from "./pages/NoMatch";
+
 import Nav from "./components/Nav";
 
 function App() {
@@ -17,9 +17,8 @@ function App() {
           <Route exact path="/restaurants/:id">
             <Detail />
           </Route>
-          <Route>
-            <NoMatch />
-          </Route>
+         
+          
         </Switch>
       </div>
     </Router>

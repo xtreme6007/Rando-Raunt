@@ -12,10 +12,7 @@ function Restaurants() {
   const [restaurants, setRestaurants] = useState([])
   const [formObject, setFormObject] = useState({})
 
-  // Load all restaurants and store them with setrestaurants
-  useEffect(() => {
-    loadRestaurants()
-  }, [])
+  
 
   // Loads all restaurants and sets them to restaurants
   function loadRestaurants() {
@@ -43,11 +40,11 @@ function Restaurants() {
   // Then reload restaurants from the database
   function handleFormSubmit(event) {
     event.preventDefault();
-    if (formObject.title && formObject.author) {
+    if (formObject.name && formObject.category) {
       API.saveRestaurant({
-        Name: formObject.title,
-        Category: formObject.author,
-        Description: formObject.synopsis
+        Name: formObject.name,
+        Category: formObject.category,
+        Description: formObject.description
         
       })
         .then(res => loadRestaurants())
@@ -75,14 +72,14 @@ function Restaurants() {
               />
               <TextArea
                 onChange={handleInputChange}
-                name="synopsis"
-                placeholder="Synopsis (Optional)"
+                name="description"
+                placeholder="Description (Optional)"
               />
               <FormBtn
-                disabled={!(formObject.author && formObject.title)}
+                // disabled={!(formObject.author && formObject.title)}
                 onClick={handleFormSubmit}
               >
-                Submit Book
+                Add To Mix
               </FormBtn>
             </form>
           </Col>
