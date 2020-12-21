@@ -4,11 +4,13 @@ import Restaurants from "./pages/restaurants";
 import Detail from "./pages/Detail";
 import Randomizer from "./pages/Randomizer";
 import Landing from "./pages/Landing";
+import './pages/RandomStyle.css'
 
 import Navagation from "./components/Nav";
 
 function App() {
   return (
+    <div className="bg">
     <Router>
       <div>
         <Navagation />
@@ -28,6 +30,7 @@ function App() {
         </Switch>
       </div>
     </Router>
+    </div>
   );
 }
 

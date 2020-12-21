@@ -1,7 +1,8 @@
 import React, {useState, useEffect } from "react";
 import API from "../utils/API";
 import Container from 'react-bootstrap/Container'
-import Button from 'react-bootstrap/Button'
+
+import './RandomStyle.css'
 
 import Card from 'react-bootstrap/Card'
 
@@ -12,6 +13,8 @@ function Randomize(){
     const num = Math.floor(Math.random() * restaurants.length)
     const randomItem = restaurants[num]
     console.log(randomItem)
+
+    
 
     useEffect(() => {
          loadRestaurants()
@@ -34,7 +37,7 @@ function Randomize(){
       }
 
 return (
-    <div>
+    <div className="">
         <Container>
            
 
@@ -47,8 +50,9 @@ return (
               marginBottom: 'auto',
               marginLeft: 'auto',
               marginRight: 'auto',
-              marginTop: '10rem'
-               }}>
+              marginTop: '10rem',
+              color: 'white'
+               }} className="cStyle">
               <Card.Body>
                 <Card.Title>{randomItem.Name}</Card.Title>
                 <Card.Subtitle className="mb-2 text-muted">{randomItem.Category}</Card.Subtitle>

@@ -55,11 +55,15 @@ function Restaurants() {
     return (
       <Container fluid>
         <Row>
-          <Col size="md-6" >
-            <Jumbotron>
+          <Col size="md-6"  style={{
+        border: 'solid',
+        marginLeft: 'auto',
+        marginRight: 'auto'
+      }}>
+            <Container >
               <h1>Add a Restraunt</h1>
-            </Jumbotron>
-            <form>
+              </Container>
+            <form >
               <Input
                 onChange={handleInputChange}
                 name="name"
@@ -74,6 +78,7 @@ function Restaurants() {
                 onChange={handleInputChange}
                 name="description"
                 placeholder="Description (Optional)"
+                style={{height: '5rem'}}
               />
               <FormBtn
                 // disabled={!(formObject.author && formObject.title)}

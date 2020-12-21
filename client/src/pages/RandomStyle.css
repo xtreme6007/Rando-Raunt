@@ -1,0 +1,13 @@
+.bg {
+    background-image: linear-gradient(#00f260, #0575e6);
+    height: 100vh;
+    z-index: -25;
+
+
+}
+
+.cStyle{
+background-image: linear-gradient(#360033, #0b8793)
+
+
+}
