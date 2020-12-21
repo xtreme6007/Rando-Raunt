@@ -25,6 +25,7 @@
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "mongoose": "^5.3.16",
+    "particles-bg": "^2.5.0",
     "react-bootstrap": "^1.4.0",
     "react-particles-js": "^3.4.1"
   }

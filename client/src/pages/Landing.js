@@ -1,14 +1,18 @@
-import React from 'React'
-import Particles from 'react-particles-js';
+import React from 'react'
+import Button from 'react-bootstrap/Button'
+import ParticlesBg from 'particles-bg'
 
 
 function Landing () {
 
 
 return(
+    
 <div>
-<Particles />
+<ParticlesBg type="circle" bg={true} />
 
+<Button href="/addRestaurant"> Add A New Restaraunt </Button>
+<Button href="/randomizer"> Find A Random Restraunt </Button>
 </div>
 
 )
