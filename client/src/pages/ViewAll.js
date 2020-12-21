@@ -1,6 +1,7 @@
 import React, {useState, useEffect } from "react";
 import API from "../utils/API";
 import ListGroup from 'react-bootstrap/ListGroup'
+import DeleteBtn from '../components/DeleteBtn'
 
 import Card from 'react-bootstrap/Card'
 import { Col, Row, Container } from "../components/Grid";
@@ -22,6 +23,11 @@ useEffect(() => {
      )
      .catch(err => console.log(err));
  };
+ function deleteBook(id) {
+    API.deleteRestaurant(id)
+      .then(res => loadRestaurants())
+      .catch(err => console.log(err));
+  }
 
 
 return (
@@ -51,6 +57,7 @@ return (
              <Card.Link href={"http://www.google.com/search?q=" + item.Name } target="_blank" >More Info</Card.Link>
              
            </Card.Body>
+           <DeleteBtn onClick={() => deleteBook(item._id)}/>
          </Card>
           )
 
