@@ -25,7 +25,7 @@ useEffect(() => {
 
 
 return (
-<div>
+<div className="view">
 <Container>
 
     {restaurants.length ? 
