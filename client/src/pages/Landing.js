@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from 'react-bootstrap/Button'
 import Container from 'react-bootstrap/Container'
-import ParticlesBg from 'particles-bg'
+
 
 
 function Landing () {
@@ -10,7 +10,7 @@ function Landing () {
 return(
     
 <div>
-<ParticlesBg   type="color" bg={true} />
+
 <Container style={{
 marginBottom: 'auto',
 marginLeft: 'auto',
