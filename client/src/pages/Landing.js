@@ -18,7 +18,7 @@ marginRight: 'auto',
 marginTop: '10rem',
 color: 'white',
 }} className="cStyle">
-    <h1>Hello, Welcome Rando-Raunt</h1>
+    <h1>Hello, Welcome To Rando-Raunt</h1>
     <p>My name is Preston Nichols and I am a Full-Stack Developer. I mainly developed this application as an incentive to try new restraunts with my girlfriend. But if you happen to be using it please enjoy and feel free to add your favorite restraunt. Check out my github <a href="https://github.com/xtreme6007" style={{color: "orange"}}>here</a></p>
 
 <Button href="/addRestaurant" style={{

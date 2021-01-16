@@ -9,8 +9,8 @@ function Navagation() {
     <Navbar.Brand href="/">Rando-Raunt</Navbar.Brand>
     <Nav className="mr-auto">
       <Nav.Link href="/addRestaurant">Add Another</Nav.Link>
-      <Nav.Link href="/randomizer">Find Random Restraunt</Nav.Link>
-      <Nav.Link href="/viewall">See All Restaurunts</Nav.Link>
+      <Nav.Link href="/randomizer">Find Random Restaurant</Nav.Link>
+      <Nav.Link href="/viewall">See All Restaurants</Nav.Link>
       
     </Nav>
     </Navbar>
